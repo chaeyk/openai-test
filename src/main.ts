@@ -1,6 +1,5 @@
 import OpenAI from 'openai';
 import 'dotenv/config';
-import { get_encoding } from 'tiktoken';
 import { testChat } from './testChat';
 import { testEmbedding } from './testEmbedding';
 import { testImage } from './testImage';
