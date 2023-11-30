@@ -5,6 +5,7 @@ import { testEmbedding } from './testEmbedding';
 import { testImage } from './testImage';
 import { testModeration } from './testModeration';
 import { testTokenizer } from './testTokenizer';
+import { testLlamaIndex } from './testLlamaIndex';
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
@@ -24,6 +25,9 @@ async function main(command: string) {
       break;
     case 'tokenizer':
       await testTokenizer();
+      break;
+    case 'llama':
+      await testLlamaIndex();
       break;
   }
 }
